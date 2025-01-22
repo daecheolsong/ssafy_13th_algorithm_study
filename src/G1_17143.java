@@ -155,32 +155,33 @@ public class G1_17143 {
 //						
 						
 						
-//						if(d<2) {
-//							
-//							
-//							if(next_y==0||next_y==Y-1) {
-//								//System.out.println(d);
-//								shark.d = d ^ 1;
-//								//System.out.println(d);
-//								//System.out.println(z+"크기"+"방향 바꿈");
-//								
-//							}
-//							
-//						}else {
-//							if(next_x==0||next_x==X-1) {
-//								shark.d = d ^ 1;
-//							}
-//							
-//							
-//						}
-						 if (next_y < 0 || next_y >= Y) {
-						        shark.d ^= 1; // 상하 방향 전환
-						        next_y = now_y + dy[shark.d]; // 새로운 방향으로 재계산
-						    }
-						    if (next_x < 0 || next_x >= X) {
-						        shark.d ^= 1; // 좌우 방향 전환
-						        next_x = now_x + dx[shark.d]; // 새로운 방향으로 재계산
-						    }
+						if(d<2) {
+							
+							
+							if(next_y<0||next_y>Y-1) {
+								//System.out.println(d);
+								shark.d = d ^ 1;
+								//System.out.println(d);
+								//System.out.println(z+"크기"+"방향 바꿈");
+								next_y = now_y + dy[shark.d];
+							}
+							
+						}else {
+							if(next_x<0||next_x>X-1) {
+								shark.d = d ^ 1;
+								next_x = now_x+ dx[shark.d];
+							}
+							
+							
+						}
+//						 if (next_y < 0 || next_y >= Y) {
+//						        shark.d ^= 1; // 상하 방향 전환
+//						        next_y = now_y + dy[shark.d]; // 새로운 방향으로 재계산
+//						    }
+//						    if (next_x < 0 || next_x >= X) {
+//						        shark.d ^= 1; // 좌우 방향 전환
+//						        next_x = now_x + dx[shark.d]; // 새로운 방향으로 재계산
+//						    }
 						
 						now_y = next_y;
 						now_x = next_x;

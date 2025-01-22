@@ -1,0 +1,11 @@
+# Eclipse metadata
+.metadata/
+bin/
+
+# IDE-specific files
+*.class
+*.log
+
+# Temporary files
+*.tmp
+*.bak
