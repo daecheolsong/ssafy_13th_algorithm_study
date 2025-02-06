@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class S5_2447 {
+public class G5_2447 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
