@@ -19,6 +19,7 @@ public class SWEA_1953 {
 			int C = Integer.parseInt(st.nextToken());
 			int L = Integer.parseInt(st.nextToken());
 			
+            
 			int[][] map = new int[n][m];
 			int[][] traceMap = new int[n][m];
 			
