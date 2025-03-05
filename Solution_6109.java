@@ -3,7 +3,7 @@ package swea;
 import java.util.*;
 import java.io.*;
 
-public class Solution_6109_신규원 {
+public class Solution_6109 {
     static int tc, n;
     static String str;
     static int[][] map;
