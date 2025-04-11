@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class CT_M {
+public class CT_medusa {
 	
 	static int N, M;
 	static int[][] grid;
